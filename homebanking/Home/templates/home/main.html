@@ -21,10 +21,10 @@
 
   <body>
     <header>
-      <a href="{% url 'access'%}"><button>Cerrar sesión</button></a>
+      <a href="{% url 'home' %}"><button>Cerrar sesión</button></a>
       <p class="mj-bienvenida">¡Bienvenido!</p>
       <img src="{% static 'home/img/foto-usuario.jpg' %}" class="img-fluid rounded-circle mr-2 avatar">
-      <p class="nombre-usuario">Eugenio Morales</p>
+      <p class="nombre-usuario">{{user}}</p>
     </header>
     
 

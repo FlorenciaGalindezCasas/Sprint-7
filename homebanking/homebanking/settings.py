@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "Clientes",
     "Cuentas",
-    "Login",
     "Prestamos",
     "Tarjetas",
     "Home",
+    "registration"
 ]
 
 MIDDLEWARE = [
@@ -130,3 +130,13 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Redirect to home URL after login (Default redirects to /accounts/profile/) 
+
+LOGIN_REDIRECT_URL = '/accounts/profile'
+
+# Redirect to home URL after logout (Default redirects to /accounts/profile/)
+LOGOUT_REDIRECT_URL = '/'
+
+#Test email 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
