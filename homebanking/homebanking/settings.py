@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     "Prestamos",
     "Tarjetas",
     "Home",
-    "registration"
+    "registration",
+    "crispy_forms",
+   
 ]
 
 MIDDLEWARE = [

@@ -70,13 +70,8 @@
            <p>
              <a href="{% url 'password_reset' %}">¿No recordás tu clave?</a>
            </p>
-           <p>
-            <input
-              type="button"
-              class="btn btn-secondary btn-block"
-              value="Crear una nueva cuenta"
-            />
-          </p>
+            <a type="button"
+            class="btn btn-secondary btn-block" href="{% url 'register'%}">Crear una nueva cuenta</a>
         </div>
       </div>
     </div>
